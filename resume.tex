@@ -1,0 +1,182 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+\usepackage{url}
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Braden Lockwood}}\\
+  \href{https://mrbraden56.github.io}{Portfolio: mrbraden56.github.io} & Email: \href{mailto:}{bradenlock83@gmail.com}\\
+  \href{https://github.com/mrbraden56}{Github: ~~github.com/mrbraden56} & Mobile:~~~816-419-3363 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+\resumeSubheading
+  {Software Engineer}{}
+  {Kiewit}{January 2023 - Present}
+  \resumeItemListStart
+      \resumeItem{}{Architected and productionized Kiewit's safety app for 2,000 daily users using front-end technology such as React, TypeScript, HTML, and CSS.}
+\resumeItem{}{Developed the backend web REST API with Django using Python, focusing on object-oriented programming.}
+          \resumeItem{}{Managed our SQL Server relational database, performing normalization and optimization of tables and queries when necessary.}
+         \resumeItem{}{Effectively created and managed cloud computing CI/CD pipelines using Azure DevOps for robust software deployment.}
+    \resumeItem{}{Initiated the adoption of E2E, Integration, and unit testing strategies using playwright, enhancing software reliability and testing efficiency in the department.}
+          \resumeItem{}{Implemented authentication and authorization using JSON Web Tokens (JWT), Token-Based Authentication, and Azure Active Directory (Azure AD) for secure client-side and server-side applications.}
+          \resumeItem{}{Lead technical discussions for the adoption of new technology and software methodologies.}
+
+
+		\resumeItemListEnd
+
+\vspace{2pt}
+		
+\resumeSubheading
+    {Software Engineer Intern}{}
+    {Kiewit}{May 2022 -  August 2022}
+    \resumeItemListStart
+    \resumeItem{}{Improved project management at Kiewit by developing an Angular-based web application, simplifying real-time tracking and storage of project requirements.}
+    \resumeItem{}{Developed secure C\# .Net APIs facilitating the storage and retrieval of project-specific images and sensitive data, enhancing the efficiency and security of data management.}
+    \resumeItem{}{Established SQL databases using Entity Framework Core and database migrations for process simplification.}
+    \resumeItem{}{Collaborated in an Agile software development team to produce efficient code.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+    {Twitter}{}
+		{An Implementation of Twitter using React and Go}{}
+		\resumeItemListStart
+		\resumeItem{}
+	{Engineered the front-end architecture using React and TypeScript, employing Tanstack Query for effective server state management.}
+	\resumeItem{}
+          {Constructed the backend with Go, incorporating GORM for efficient object-relational mapping and Gin to establish a robust RESTful API.}
+		\resumeItemListEnd
+		
+				 \vspace{2pt}
+
+
+\resumeSubheading
+  {Stython}{}
+  {A Compiler for Python}{}
+  \resumeItemListStart
+    \resumeItem{}{Implemented a Hand-Coded Scanner using C++}
+    \resumeItem{}{Designed the language using a series of regular expressions.}
+  \resumeItemListEnd
+		
+		 \vspace{2pt}
+  
+    \resumeSubheading
+		{NanoGrad}{}
+		{A Smaller Implementation of Pytorch}{}
+		\resumeItemListStart
+	         \resumeItem{}{Initiated and developed a custom machine learning framework to deepen understanding of PyTorch internals.}
+           \resumeItem{}{Employed Python for user interaction with the framework, emulating PyTorch's easy-to-use interface.}
+           \resumeItem{}{Utilized modern C++ for the backend, optimizing matrix multiplication operations and memory management with smart pointers.}
+        \resumeItem{}{Bridged Python frontend with C++ backend using ctypes library, and managed compilation with CMake, ensuring smooth and efficient performance.}
+
+		\resumeItemListEnd
+   
+		
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Kansas}{\textit{August 2018 - December 2022}}
+      {B.S. Computer Science}{}
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~TypeScript, Python, Go, SQL, C\#, C++}
+	\resumeSubItem{Frameworks}{~~~~React, Tanstack Query, Django, Numpy}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Git, SQL Server, Linux, Azure DevOps, Azure Pipelines}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+%\vspace{-5pt}
+%\section{Goals}
+%I am passionate about what I do and, wherever I go, I want to be around others who are passionate as well. I want to be constantly learning my entire life, willing to accept knowledge from whoever may give it.
+
+\end{document}

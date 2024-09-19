@@ -1,0 +1,192 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+\usepackage{url}
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Braden Lockwood}}\\
+  \href{https://mrbraden56.github.io}{Portfolio: mrbraden56.github.io} & Email: \href{mailto:}{bradenlock83@gmail.com}\\
+  \href{https://github.com/mrbraden56}{Github: ~~github.com/mrbraden56} & Mobile:~~~816-419-3363 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+\resumeSubheading
+  {Software Engineer}{}
+  {Kiewit}{October 2023 - Present}
+  \resumeItemListStart
+    \resumeItem{}{Developed a company-wide safety app using React and TypeScript, streamlining the management of construction job safety processes.}
+    \resumeItem{}{Managed the data and API within the safety app utilizing Python and Django, employing its ORM and REST framework.}
+    \resumeItem{}{Proficient in SQL, efficiently interacting with complex stored procedures for efficient data querying.}
+   \resumeItem{}{Effectively managed CI/CD pipelines using Azure DevOps and demonstrated a solid foundation in Azure for robust software deployment.}
+    \resumeItem{}{Initiated the adoption of E2E and Integration testing strategies, enhancing software reliability and testing efficiency in the department.}
+    \resumeItem{}{Implemented effective branching strategies in Git to optimize team collaboration and workflow management.}
+  \resumeItemListEnd
+
+
+\vspace{2pt}
+
+      \resumeSubheading
+		{Machine Learning Engineer}{}
+		{Kiewit}{January 2023 -  October 2023}
+		\resumeItemListStart
+		\resumeItem{}{Engineered a Numpyro Bayesian Regression model, predicting equipment costs with 75\% accuracy and providing uncertainty estimates, enhancing strategic bidding and contract wins across U.S. transportation departments.}
+		\resumeItem{}{Trained a series of XGBoost models using hand-crafted features to boost performance and optimized hyperparameters for efficient training.}
+		\resumeItem{}{Pioneered a department-wide initiative at Kiewit by executing an automated data scraping strategy, resulting in over 9,000 engineering contracts being collected and subsequently utilized for a pivotal transportation cost prediction model.}
+		\resumeItemListEnd
+
+\vspace{2pt}
+		
+\resumeSubheading
+    {Software Engineer Intern}{}
+    {Kiewit}{May 2022 -  August 2022}
+    \resumeItemListStart
+    \resumeItem{}{Improved project management at Kiewit by developing an Angular-based web application, simplifying real-time tracking and storage of project requirements.}
+    \resumeItem{}{Developed secure C\# ASP.Net Core APIs facilitating the storage and retrieval of project-specific images and sensitive data, enhancing the efficiency and security of data management.}
+    \resumeItem{}{Established SQL databases using Entity Framework Core and database migrations for process simplification.}
+    \resumeItem{}{Collaborated in an Agile software development team to produce efficient code.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Stython}{}
+  {A Compiler for Python}{}
+  \resumeItemListStart
+    \resumeItem{}{Implemented a Hand-Coded Scanner using C++}
+    \resumeItem{}{Designed the language using a series of regular expressions.}
+  \resumeItemListEnd
+		
+		 \vspace{2pt}
+  
+    \resumeSubheading
+		{NanoGrad}{}
+		{A Smaller Implementation of Pytorch}{}
+		\resumeItemListStart
+	         \resumeItem{}{Initiated and developed a custom machine learning framework to deepen understanding of PyTorch internals.}
+           \resumeItem{}{Employed Python for user interaction with the framework, emulating PyTorch's easy-to-use interface.}
+           \resumeItem{}{Utilized modern C++ for the backend, optimizing matrix multiplication operations and memory management with smart pointers.}
+        \resumeItem{}{Bridged Python frontend with C++ backend using ctypes library, and managed compilation with CMake, ensuring smooth and efficient performance.}
+
+		\resumeItemListEnd
+		
+		 \vspace{2pt}
+		 
+    \resumeSubheading
+    {Drewgon}{}
+		{A Compiler Implemented in C++}{}
+		\resumeItemListStart
+		\resumeItem{}
+	{Implemented the Scanner and Parser by using Flex and Bison.}
+	\resumeItem{}
+          {Optimized the intermidiate representation using techniques such as dead code elimiation and constant propagation}
+          \resumeItem{}
+          {Generated Assembly code for the x64 ISA, optimizing for efficient code by utlizing the memory zones.}
+		\resumeItemListEnd
+   
+		
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Kansas}{\textit{August 2018 - December 2022}}
+      {B.S. Computer Science}{}
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~TypeScript, Python, Go, SQL, C\#, C++}
+	\resumeSubItem{Frameworks}{~~~~React, Tanstack Query, Django, Numpy}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Git, SQL Server, Linux, Azure DevOps, Azure Pipelines}
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+%\vspace{-5pt}
+%\section{Goals}
+%I am passionate about what I do and, wherever I go, I want to be around others who are passionate as well. I want to be constantly learning my entire life, willing to accept knowledge from whoever may give it.
+
+\end{document}
